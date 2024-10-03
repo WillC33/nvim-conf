@@ -1,3 +1,5 @@
+local fns = require("util.fns").functions
+
 local M = {}
 
 -- Import keymap locally
@@ -58,6 +60,11 @@ M.setup = function()
 
 	-- Terminal mode mappings
 	set_keymap("t", "<Esc>", [[<C-\><C-n>]], "Exit terminal mode")
+
+	-- Custom Function mappings
+	set_keymap({ "n", "v" }, "<leader>cd", function()
+		fns.LspRename()
+	end, "Rename usages of the current highlight")
 end
 
 return M
