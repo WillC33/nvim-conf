@@ -21,4 +21,9 @@ vim.cmd([[
   highlight PmenuSel guibg=NONE
   highlight CursorLine guibg=NONE
   highlight CursorLineNr guibg=NONE
+
+  highlight NvimTreeNormal guibg=NONE
+  highlight NvimTreeVertSplit guibg=NONE
+  highlight NvimTreeEndOfBuffer guibg=NONE
+  highlight NvimTreeCursorLine guibg=NONE
 ]])

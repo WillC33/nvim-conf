@@ -90,6 +90,13 @@ local config = function()
 		filetypes = { "svelte" },
 	})
 
+	lspconfig.tailwindcss.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		filetypes = { "svelte" },
+	})
+
+	-- Dotnet
 	lspconfig.omnisharp.setup({
 		capabilities = capabilities,
 		on_attach = on_attach,

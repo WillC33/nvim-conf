@@ -10,9 +10,7 @@ return {
 			},
 			display_time = 300,
 		})
-		vim.keymap.set("n", "K", "<Plug>(CybuPrev)")
-		vim.keymap.set("n", "J", "<Plug>(CybuNext)")
-		vim.keymap.set({ "n", "v" }, "<c-s-tab>", "<plug>(CybuLastusedPrev)")
+		vim.keymap.set({ "n", "v" }, "<c-tab>", "<plug>(CybuLastusedPrev)")
 		vim.keymap.set({ "n", "v" }, "<tab>", "<plug>(CybuLastusedNext)")
 	end,
 }
